@@ -1,0 +1,22 @@
+
+<!-- <div class="col-3 col_border"><button style="color: red;" onclick="clr()">C</button></div>
+            <div class="col-3 col_border"><button onclick="disLastChr()"><i class="fa-sharp fa-solid fa-arrow-left"></i></button></div>
+            <div class="col-3 col_border"><button style="color: blue;" onclick="dis('.')">.</button></div>
+            <div class="col-3 col_border"><button style="color: blue;" onclick="dis('*')">X</button></div>
+            <div class="col-3 col_border"><button onclick="dis('7')">7</button></div>
+            <div class="col-3 col_border"><button onclick="dis('8')">8</button></div>
+            <div class="col-3 col_border"><button onclick="dis('9')">9</button></div>
+            <div class="col-3 col_border"><button style="color: blue;" onclick="dis('/')">/</button></div>
+            <div class="col-3 col_border"><button onclick="dis('4')">4</button></div>
+            <div class="col-3 col_border"><button onclick="dis('5')">5</button></div>
+            <div class="col-3 col_border"><button onclick="dis('6')">6</button></div>
+            <div class="col-3 col_border"><button style="color: blue;" onclick="dis('-')">-</button></div>
+            <div class="col-3 col_border"><button onclick="dis('1')">1</button></div>
+            <div class="col-3 col_border"><button onclick="dis('2')">2</button></div>
+            <div class="col-3 col_border"><button onclick="dis('3')">3</button></div>
+            <div class="col-3 col_border"><button style="color: blue;" onclick="dis('+')">+</button></div>
+            <div class="col-3 col_border"><button onclick="dis('0')">0</button></div>
+            <div class="col-3 col_border"><button onclick="dis('00')">00</button></div>
+            <div class="col-5 col_border" style="background-color: rgb(43, 128, 190);height:50px;">
+                <button onclick="solve()">=</button>
+            </div> -->
