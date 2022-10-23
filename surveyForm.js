@@ -1,3 +1,6 @@
+const formEle = document.getElementById('survey-form')
+// formEle.classList.add('form-group')
+
 const h1Ele = document.createElement('h1');
 h1Ele.id = 'title'
 h1Ele.innerText = 'Survey-Forms'
@@ -11,7 +14,6 @@ document.body.append(h1Ele,description);
 
 
 const query = document.querySelectorAll("div.container > div.row > div.col > div.row > .col-md-6,.col-lg-3")
-console.log(query)
 for(var idx= 0;idx<query.length;idx++){
     if(query[idx].textContent != ""){
         const element = document.createElement("label");
@@ -37,8 +39,9 @@ for(var idx= 0;idx<query.length;idx++){
     }
 
 }
+console.log(document.querySelectorAll('#survey-form '))
 const query1 = document.querySelectorAll("div.container > div.row > div.col > div.row > div.col-9 > div.row > div.col-3 ")
-console.log(query1)
+
 for(var idx= 0;idx<query1.length;idx++){
     if(query1[idx].textContent != ""){
         const element = document.createElement("label");
@@ -78,7 +81,7 @@ function AddData(e)
 {
 e.preventDefault();
 var rows="";
-var fName=document.getElementById("FirstName:").value;
+var fName=document.getElementById("first-name").value;
 var lName=document.getElementById("LastName:").value;
 var address=document.getElementById("Address:").value;
 var state=document.getElementById("State:").value;
