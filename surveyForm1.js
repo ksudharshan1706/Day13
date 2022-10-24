@@ -60,7 +60,12 @@ fields.map((obj)=>{
     labelEle.innerHTML = obj.label;
 
     divEle.appendChild(labelEle);
-    const inputEle = document.createElement('input');
+    if(obj.type == "textarea"){
+      var inputEle = document.createElement('textarea');  
+    }
+    else{
+    var inputEle = document.createElement('input');
+    }
     inputEle.setAttribute('id',obj.id);
     if(obj.required){
       inputEle.setAttribute('required',obj.required)
@@ -126,11 +131,10 @@ FoodFields.map((obj)=>
   foodLabel.setAttribute('for',obj.id);
   foodLabel.classList.add('form-check-label');
   foodLabel.innerText = obj.label;
-
   foodDiv.append(foodEle,foodLabel);
   formEle.append(foodDiv);
-
 })
+
 
 // console.log("here",document.querySelectorAll('#survey-form'))
 // console.log(document.querySelectorAll('#survey-form .form-group #first-name'))
@@ -139,10 +143,15 @@ const btn = document.createElement('button');
 btn.id = 'submit';
 btn.setAttribute('type', 'submit');
 btn.setAttribute('class', 'btn btn-primary');
+btn.classList.add("m-3")
 btn.innerText = "Submit";
 formEle.append(btn);
 document.body.appendChild(formEle)
 
+
+var textarea = document.getElementById('comments');
+console.log(textarea.nodeName,textarea.id)
+console.log(document.querySelectorAll('#survey-form .form-group'))
 //table
 
 const tableElement = document.createElement('table');
